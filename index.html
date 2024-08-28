@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">E-Art</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <div class="cart-icon">Cart</div>
+        </div>
+        <button class="toggle-dark-mode">Dark Mode</button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>New Collection</h1>
+            <p>Discover our latest products and offers.</p>
+            <button>Shop Now</button>
+        </div>
+        <img src="il_fullxfull.4276222157_pnp1.webp" alt="Featured Product">
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Elephant Digital Art.jpg" alt="Product 1">
+                <div class="overlay">Quick View</div>
+                <h3>Product 1</h3>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Elephant Color.jpg" alt="Product 2">
+                <div class="overlay">Quick View</div>
+                <h3>Product 2</h3>
+                <p>$39.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section class="product-categories">
+        <h2>Shop by Category</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="Canvas.jpg" alt="Canvas Category">
+                <h3>Canvas Category</h3>
+            </div>
+            <div class="category-card">
+                <img src="portada_sketch-1000x1000_2.jpg" alt="Category 2">
+                <h3>Sketch Category</h3>
+            </div>
+            <!-- Add more categories as needed -->
+        </div>
+    </section>
+
+    <section class="promotions">
+        <div class="promotion-banner">
+            <h3>Summer Sale - Up to 50% Off</h3>
+        </div>
+        <div class="promotion-banner">
+            <h3>New Arrivals - Limited Stock</h3>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="newsletter">
+            <input type="email" placeholder="Subscribe to our newsletter">
+            <button>Subscribe</button>
+        </div>
+    </footer>
+
+    <script>
+        const toggleButton = document.querySelector('.toggle-dark-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
